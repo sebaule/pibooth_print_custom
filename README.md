@@ -22,7 +22,7 @@ Declaration of this plugin :
     [GENERAL]
         
     # Path to custom plugin(s) not installed with pip (list of quoted paths accepted)
-    plugins = /<Full Path>/pibooth_month_name.py
+    plugins = /<Full Path>/pibooth_print_custom.py
 note:: Edit the configuration by running the command ``pibooth --config`` or editing the `.config/pibooth/pibooth.cfg` file.
 
 or if you have more than one plugin you have to make a table like that:
@@ -30,13 +30,13 @@ or if you have more than one plugin you have to make a table like that:
     [GENERAL]
         
     # Path to custom plugin(s) not installed with pip (list of quoted paths accepted)
-    plugins = ('/<Full Path>/pibooth_ftp.py', '/<Full Path>/pibooth_month_name.py')
+    plugins = ('/<Full Path>/pibooth_ftp.py', '/<Full Path>/pibooth_print_custom.py')
 note:: Edit the configuration by running the command ``pibooth --config`` or editing the `.config/pibooth/pibooth.cfg` file.
 
 
 
 -------------
-Pibooth-Month-Name Configuration
+pibooth_print_custom Configuration
 -------------
 
 Here the new configuration options available in the `pibooth` configuration.
