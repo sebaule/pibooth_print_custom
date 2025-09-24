@@ -19,12 +19,14 @@ Pibooth does not include a hook that is triggered at the moment of photo printin
 It is necessary to add the hook directly into Pibooth
 
 In your pibooth file `pibooth_env/lib/python3.11/site-packages/pibooth/booth.py` you have to add lines below : 
-Replace this 
+Replace this :
+
     self.printer = Printer(config.get('PRINTER', 'printer_name'),
                     config.getint('PRINTER', 'max_pages'),
                     config.gettyped('PRINTER', 'printer_options'),
                     self.count)
-by this
+
+by this :
 
     # Appel du hook pour récupérer une imprimante custom
     custom_printers = self._pm.hook.pibooth_setup_printer(cfg=self._config)
